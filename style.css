@@ -127,9 +127,49 @@
 
 .about-section-left h2{
     margin-bottom: 10px;
-    color: black ;
+    color:#333333 ;
 }
 .about-section-left p{
     font-size: large;
     color: gray;
+}
+.skills-title {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 80px;
+    color: #333333;
+}
+
+.skills-title::before,
+.skills-title::after {
+    content: "";
+    width: 450px;
+    height: 1px;
+    background-color: gray;
+}
+.myskills{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    align-items: center;
+    gap: 25px;
+}
+.skill {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.skill h2{
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333333;
+}
+.skill img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
